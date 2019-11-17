@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 1,
+    "description": "This datapack allows you to make a stack of 2 mobs riding on each oter symbiotic; that is, if one dies, so does the other. One mob must be tagged (body), the other must be tagged (head) in order for this to function. An attached text document contains a list of examples of how you could use this."
+  }
+}
