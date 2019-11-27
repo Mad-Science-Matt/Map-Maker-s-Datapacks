@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 1,
+    "description": "This datapack makes skeletons switch between melee and ranged weapons based on their distance from the player. Do note that the bows they equip are not enchanted and any enchantments they may have on bows they spawn with will be removed upon switching. Giving a skeleton the tag noswap will prevent it from switching weapons."
+  }
+}
