@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 1,
-    "description": "This datapack makes skeletons switch between melee and ranged weapons based on their distance from the player. Do note that the bows they equip are not enchanted and any enchantments they may have on bows they spawn with will be removed upon switching. Giving a skeleton the tag noswap will prevent it from switching weapons."
+    "description": "This datapack allows you to make spider eggs by giving a shulker the tag (eggsac). The spider egg will hatch spawning cave spiders when a player or arrow gets too close."
   }
 }
