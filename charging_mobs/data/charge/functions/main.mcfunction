@@ -12,7 +12,7 @@ execute as @e[tag=CMaimed,tag=CMbullet,scores={CMlifetime=..10}] at @s rotated ~
 
 execute as @e[tag=CMaimed,tag=CMbullet,scores={CMlifetime=11..19}] run data modify entity @s Rotation[1] set value 0
 
-execute as @e[tag=CMaimed,tag=CMbullet,scores={CMlifetime=20..30}] at @s rotated ~ 0 if block ^ ^ ^.9 air if block ^ ^ ^1.9 air unless block ^ ^-.9 ^ air run tp @s ^ ^ ^.9
+execute as @e[tag=CMaimed,tag=CMbullet,scores={CMlifetime=20..30}] at @s rotated ~ 0 if block ^ ^ ^.9 air if block ^ ^ ^1.9 air run tp @s ^ ^ ^.9
 
 tag @e[tag=!CMaimed,tag=CMbullet] add CMaimed
 
