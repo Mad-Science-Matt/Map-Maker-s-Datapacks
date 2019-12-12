@@ -1,3 +1,3 @@
-function charge:beeshooter
+function bees:beeshooter
 
-function charge:beeper
+function bees:beeper
