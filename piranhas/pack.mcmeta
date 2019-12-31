@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 1,
+    "description": "Any mob with the tag piranha will be replaced by a custom mob."
+  }
+}
