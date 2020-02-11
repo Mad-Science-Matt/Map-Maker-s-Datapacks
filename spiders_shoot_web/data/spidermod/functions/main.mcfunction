@@ -6,6 +6,8 @@ scoreboard players add @e[type=spider] WEBattacktime 1
 
 execute as @e[type=spider,scores={WEBattacktime=..30}] at @s if entity @p[distance=..12] run effect give @s minecraft:slowness 1 5 true
 
+execute as @e[type=spider,scores={WEBattacktime=30}] at @s if entity @p[distance=..12] run playsound minecraft:entity.llama.spit hostile @p ~ ~ ~ 16
+
 execute as @e[type=spider,scores={WEBattacktime=30}] at @s if entity @p[distance=..12] run summon minecraft:armor_stand ~ ~-.4 ~ {Small:1b,Marker:1b,Invisible:1b,Tags:["WEBbullet"]}
 
 scoreboard players set @e[tag=!WEBaimed,tag=WEBbullet] WEBlifetime 0
