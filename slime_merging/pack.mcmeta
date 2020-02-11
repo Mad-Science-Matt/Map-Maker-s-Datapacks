@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 1,
+    "description": "A simple pack that makes five slimes of the same kind merge into one slime of a larger size. Also works with magma cubes."
+  }
+}
