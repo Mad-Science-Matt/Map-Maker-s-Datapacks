@@ -10,7 +10,7 @@ scoreboard players add @e[tag=angler] AnglerAttackTime 1
 
 execute as @e[tag=angler,scores={AnglerAttackTime=20..}] at @s if entity @p[distance=..1.4] run scoreboard players set @s AnglerAttackTime 0
 
-execute as @p at @s if entity @e[tag=angler,scores={AnglerAttackTime=1},distance=..1.4] run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"bubble_pop",Radius:0.4f,Duration:10,DurationOnUse:10f,Effects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
+execute as @p at @s if entity @e[tag=angler,scores={AnglerAttackTime=1},distance=..1.4] run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"bubble_pop",Radius:0.8f,Duration:20,DurationOnUse:-10f,Effects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
 
 replaceitem entity @e[tag=angler,nbt={HandItems:[{id:"minecraft:trident",Count:1b},{}]}] weapon.mainhand minecraft:cod
 
