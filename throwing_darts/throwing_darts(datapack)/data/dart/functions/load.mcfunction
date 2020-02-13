@@ -1,0 +1,1 @@
+give @p[gamemode=creative] minecraft:snowball{display:{Name:'{"text":"Throwing Dart"}'},CustomModelData:1,dart:1} 1
