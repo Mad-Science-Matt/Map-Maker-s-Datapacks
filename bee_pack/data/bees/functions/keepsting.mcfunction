@@ -1,0 +1,1 @@
+data merge entity @e[type=bee,tag=keepsting,nbt={HasStung:1b},limit=1] {HasStung:0b}
