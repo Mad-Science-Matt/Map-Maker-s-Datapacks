@@ -1,0 +1,1 @@
+data merge entity @e[type=armor_stand,tag=marker,nbt={Invisible:0b},sort=nearest,limit=1] {Marker:1b,Invisible:1b}
