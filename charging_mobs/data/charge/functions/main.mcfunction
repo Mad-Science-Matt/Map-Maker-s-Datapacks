@@ -24,7 +24,7 @@ teleport @e[tag=CMbullet,scores={CMlifetime=50..}] ~ -256 ~
 
 execute at @e[tag=CMbullet] run particle minecraft:firework ^ ^1.5 ^ .3 .6 .3 0 1 normal
 
-execute as @e[tag=charger,scores={CMattacktime=200..}] run scoreboard players set @s CMattacktime 0
+execute as @e[tag=charger,scores={CMattacktime=200..}] at @s if entity @p[distance=..12] run scoreboard players set @s CMattacktime 0
 
 execute as @e[tag=CMbullet,scores={CMlifetime=1}] at @s run playsound minecraft:entity.evoker.cast_spell hostile @p ~ ~ ~ 16
 
