@@ -36,7 +36,7 @@ execute at @e[tag=pillagerRocket,tag=explodingRocket] run summon minecraft:firew
 
 teleport @e[tag=pillagerRocket,tag=explodingRocket] ~ -256 ~
 
-execute at @e[tag=pillagerRocket] run particle minecraft:firework ^ ^1 ^-.2 .1 .1 .1 0 3 normal
+execute at @e[tag=pillagerRocket] run particle minecraft:firework ^ ^1 ^-.2 .1 .1 .1 0 3 force
 
 
 
