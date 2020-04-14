@@ -1,8 +1,10 @@
-execute at @e[type=minecraft:firework_rocket] if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run summon minecraft:armor_stand ~ ~-1 ~ {Small:1b,Marker:1b,Invisible:1b,Tags:["pillagerRocket"]}
+execute as @e[type=minecraft:firework_rocket] at @s if entity @e[type=minecraft:pillager,tag=rocketeer,distance=3..] run tag @e[] add normalRocket
 
-execute at @e[type=minecraft:firework_rocket] if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run playsound minecraft:entity.firework_rocket.launch hostile @p ~ ~ ~ 16
+execute at @e[type=minecraft:firework_rocket,tag=!normalRocket] if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run summon minecraft:armor_stand ~ ~-1 ~ {Small:1b,Marker:1b,Invisible:1b,Tags:["pillagerRocket"]}
 
-execute as @e[type=minecraft:firework_rocket] at @s if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run teleport @s ~ -256 ~
+execute at @e[type=minecraft:firework_rocket,tag=!normalRocket] if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run playsound minecraft:entity.firework_rocket.launch hostile @p ~ ~ ~ 16
+
+execute as @e[type=minecraft:firework_rocket,tag=!normalRocket] at @s if entity @e[type=minecraft:pillager,tag=rocketeer,distance=..3] run teleport @s ~ -256 ~
 
 scoreboard players set @e[tag=!rocketAimed,tag=pillagerRocket] RocketLifetime 0
 
@@ -20,7 +22,7 @@ tag @e[tag=pillagerRocket,scores={RocketLifetime=100..}] add explodingRocket
 
 execute as @e[tag=pillagerRocket] at @s unless block ^ ^1 ^.6 minecraft:air run tag @s add explodingRocket
 
-execute as @e[tag=pillagerRocket] at @s if entity @p[distance=..1.4] run tag @s add explodingRocket
+execute as @e[tag=pillagerRocket] at @s if entity @p[distance=..1.8] run tag @s add explodingRocket
 
 
 #1 explosion
