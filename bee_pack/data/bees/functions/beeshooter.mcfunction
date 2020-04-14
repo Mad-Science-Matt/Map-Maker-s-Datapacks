@@ -28,8 +28,8 @@ execute as @e[tag=BSPITbullet] at @s if entity @p[distance=..1.2] run teleport @
 
 execute at @e[tag=BSPITbullet] run particle minecraft:item_slime ^ ^.6 ^-.2 .1 .1 .1 1 3 normal
 
-execute as @e[tag=beespitter,scores={BEEattacktime=100..}] run scoreboard players set @s BEEattacktime 0
+execute as @e[tag=beespitter,scores={BEEattacktime=100..}] at @s if entity @p[distance=..24] run scoreboard players set @s BEEattacktime 0
 
-execute as @e[tag=beespitter,scores={BEEattacktime=..20}] at @s run particle minecraft:sneeze ^ ^.3 ^ .3 .3 .3 0 1 normal
+execute as @e[tag=beespitter,scores={BEEattacktime=..20}] at @s if entity @p[distance=..24] run particle minecraft:sneeze ^ ^.3 ^ .3 .3 .3 0 1 normal
 
 data merge entity @e[type=bee,tag=beespitter,nbt=!{Anger:0},sort=random,limit=1] {Anger:0,HurtBy:""}
