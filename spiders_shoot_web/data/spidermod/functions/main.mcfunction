@@ -30,7 +30,7 @@ execute as @e[tag=WEBbullet] at @s if entity @p[distance=..1.2] run teleport @s 
 
 execute at @e[tag=WEBbullet] run particle minecraft:cloud ^ ^1 ^-.2 .1 .1 .1 0 3 normal
 
-execute as @e[type=spider,scores={WEBattacktime=200..}] run scoreboard players set @s WEBattacktime 0
+execute as @e[type=spider,scores={WEBattacktime=200..}] at @s if entity @p[distance=..12] run scoreboard players set @s WEBattacktime 0
 
 execute as @e[type=spider,scores={WEBattacktime=..30}] at @s if entity @p[distance=..12] run particle minecraft:cloud ^ ^1 ^ .4 .4 .4 0 1 normal
 
