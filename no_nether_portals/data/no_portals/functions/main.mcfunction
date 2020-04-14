@@ -1,0 +1,1 @@
+execute at @a run fill ~-2 ~-1 ~-2 ~2 ~3 ~2 minecraft:air replace minecraft:nether_portal

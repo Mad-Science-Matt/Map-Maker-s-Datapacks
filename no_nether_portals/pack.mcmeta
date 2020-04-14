@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 1,
+    "description": "Makes it so the player cannot travel to or from the nether via nether portals. Any portal the player approaches is instantly destroyed."
+  }
+}
