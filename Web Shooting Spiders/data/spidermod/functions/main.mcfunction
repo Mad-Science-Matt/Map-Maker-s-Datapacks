@@ -26,13 +26,13 @@ scoreboard players add @e[tag=WEBbullet] WEBlifetime 1
 
 teleport @e[tag=WEBbullet,scores={WEBlifetime=30..}] ~ -256 ~
 
-execute as @e[tag=WEBbullet] at @s unless block ~ ~.5 ~ minecraft:air run teleport @s ~ -256 ~
+execute as @e[tag=WEBbullet] at @s positioned ~ ~0.5 ~ unless block ~ ~ ~ minecraft:air run teleport @s ~ -256 ~
 
-execute as @e[tag=WEBbullet] at @s if entity @p[dx=0] run execute at @p[sort=nearest] run playsound minecraft:block.honey_block.step hostile @a ~ ~ ~ 16
+execute as @e[tag=WEBbullet] at @s positioned ~ ~0.5 ~ if entity @p[dx=0] run execute at @p[sort=nearest] run playsound minecraft:block.honey_block.step hostile @a ~ ~ ~ 16
 
-execute as @e[tag=WEBbullet] at @s if entity @p[dx=0] run execute at @p[sort=nearest] run fill ~-.2 ~ ~-.2 ~.2 ~ ~.2 cobweb replace air
+execute as @e[tag=WEBbullet] at @s positioned ~ ~0.5 ~ if entity @p[dx=0] run execute at @p[sort=nearest] run fill ~-.2 ~ ~-.2 ~.2 ~ ~.2 cobweb replace air
 
-execute as @e[tag=WEBbullet] at @s if entity @p[dx=0] run teleport @s ~ -256 ~
+execute as @e[tag=WEBbullet] at @s positioned ~ ~0.5 ~ if entity @p[dx=0] run teleport @s ~ -256 ~
 
 execute at @e[tag=WEBbullet] run particle minecraft:cloud ^ ^1 ^-.2 .1 .1 .1 0 3 normal
 
