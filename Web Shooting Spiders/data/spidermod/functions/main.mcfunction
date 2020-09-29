@@ -4,7 +4,7 @@ tag @e[type=spider,tag=!WEBcheck] add WEBcheck
 
 tag @e remove seesplayer
 
-execute as @e at @s at @p anchored eyes facing entity @s eyes run function spidermod:check_sight
+execute as @e[type=spider] at @s at @p anchored eyes facing entity @s eyes run function spidermod:check_sight
 
 scoreboard players add @e[type=spider] WEBattacktime 1
 
